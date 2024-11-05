@@ -22,33 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        'Label1 = New Label()
-        'SuspendLayout()
-        '' 
-        '' Label1
-        '' 
-        'Label1.AutoSize = True
-        'Label1.Location = New Point(435, 219)
-        'Label1.Name = "Label1"
-        'Label1.Size = New Size(41, 15)
-        'Label1.TabIndex = 0
-        'Label1.Text = "Label1"
-        '' 
-        '' Form1
-        '' 
-        'AutoScaleDimensions = New SizeF(7.0F, 15.0F)
-        'AutoScaleMode = AutoScaleMode.Font
-        'ClientSize = New Size(830, 509)
-        'Controls.Add(Label1)
-        'Name = "Form1"
-        'Text = "Form1"
-        'ResumeLayout(False)
-        'PerformLayout()
-
-
-
-
-        Label1 = New Label()
+        label1 = New Label()
         btnAddNode = New Button()
         txtNode = New TextBox()
         label2 = New Label()
@@ -73,13 +47,13 @@ Partial Class Form1
         ' 
         ' label1
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Yu Gothic UI", 14.0F, FontStyle.Bold)
-        Label1.Location = New Point(233, 21)
-        Label1.Name = "label1"
-        Label1.Size = New Size(324, 25)
-        Label1.TabIndex = 0
-        Label1.Text = "GRAFO CON LISTA DE ADYACENCIA"
+        label1.AutoSize = True
+        label1.Font = New Font("Yu Gothic UI", 14.0F, FontStyle.Bold)
+        label1.Location = New Point(233, 21)
+        label1.Name = "label1"
+        label1.Size = New Size(324, 25)
+        label1.TabIndex = 0
+        label1.Text = "GRAFO CON LISTA DE ADYACENCIA"
         ' 
         ' btnAddNode
         ' 
@@ -89,7 +63,6 @@ Partial Class Form1
         btnAddNode.TabIndex = 1
         btnAddNode.Text = "Add Node"
         btnAddNode.UseVisualStyleBackColor = True
-        AddHandler btnAddNode.Click, AddressOf btnAddNode_Click
         ' 
         ' txtNode
         ' 
@@ -147,7 +120,6 @@ Partial Class Form1
         btnAddEdge.TabIndex = 8
         btnAddEdge.Text = "Add Edge"
         btnAddEdge.UseVisualStyleBackColor = True
-        AddHandler btnAddEdge.Click, AddressOf btnAddEdge_Click
         ' 
         ' btnRemoveEdge
         ' 
@@ -157,7 +129,6 @@ Partial Class Form1
         btnRemoveEdge.TabIndex = 9
         btnRemoveEdge.Text = "Remove Edge"
         btnRemoveEdge.UseVisualStyleBackColor = True
-        AddHandler btnRemoveEdge.Click, AddressOf btnRemoveEdge_Click
         ' 
         ' txtGraphRepresentation
         ' 
@@ -202,7 +173,6 @@ Partial Class Form1
         btnShowDFS.TabIndex = 16
         btnShowDFS.Text = "Show DFS Algorithm"
         btnShowDFS.UseVisualStyleBackColor = True
-        AddHandler btnShowDFS.Click, AddressOf btnShowDFS_Click
         ' 
         ' txtStartNode
         ' 
@@ -219,7 +189,6 @@ Partial Class Form1
         btnRemoveNode.TabIndex = 20
         btnRemoveNode.Text = "Remove"
         btnRemoveNode.UseVisualStyleBackColor = True
-        AddHandler btnRemoveNode.Click, AddressOf btnRemoveNode_Click
         ' 
         ' btnShowBFS
         ' 
@@ -229,7 +198,6 @@ Partial Class Form1
         btnShowBFS.TabIndex = 21
         btnShowBFS.Text = "Show BFS Algorithm"
         btnShowBFS.UseVisualStyleBackColor = True
-        AddHandler btnShowBFS.Click, AddressOf btnShowBFS_Click
         ' 
         ' label6
         ' 
@@ -248,7 +216,6 @@ Partial Class Form1
         btnShowDFSRecursive.TabIndex = 23
         btnShowDFSRecursive.Text = "Show DFS Recursive Algorithm"
         btnShowDFSRecursive.UseVisualStyleBackColor = True
-        AddHandler btnShowDFSRecursive.Click, AddressOf btnShowDFSRecursive_Click
         ' 
         ' btnRemoveAll
         ' 
@@ -258,7 +225,6 @@ Partial Class Form1
         btnRemoveAll.TabIndex = 24
         btnRemoveAll.Text = "Remove All"
         btnRemoveAll.UseVisualStyleBackColor = True
-        AddHandler btnRemoveAll.Click, AddressOf btnRemoveAll_Click
         ' 
         ' Form1
         ' 
@@ -285,7 +251,7 @@ Partial Class Form1
         Controls.Add(label2)
         Controls.Add(txtNode)
         Controls.Add(btnAddNode)
-        Controls.Add(Label1)
+        Controls.Add(label1)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
